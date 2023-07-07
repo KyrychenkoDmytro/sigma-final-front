@@ -1,0 +1,219 @@
+.News {
+    padding: 180px 0 240px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 48px;
+    }
+
+    &__title-label {
+        margin-bottom: 10px;
+    }
+
+    &__wrap-blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 46px;
+    }
+
+    &__blog {
+        padding: 43px 32px;
+        height: 524px;
+        border-radius: 30px;
+    }
+
+    &__blog:first-child {
+        background: url(../../../public/img/News-blog-bg1.jpg) no-repeat center center / cover;
+    }
+
+    &__blog:last-child {
+        background: url(../../../public/img/News-blog-bg2.jpg) no-repeat center center / cover;
+    }
+
+    &__blog-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    &__date-day {
+        font-size: 25px;
+        line-height: 29px;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__date-month {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 23px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__blog-info {
+        position: relative;
+        top: 130px;
+        width: 100%;
+        padding: 46px 57px 60px;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
+    }
+
+    &__blog-author {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+
+        &::after {
+            content: url(../../../public/img/icons/news-block-avatar.svg);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__blog-title {
+        margin-bottom: 5px;
+    }
+
+    &__blog-text {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:1639.98px) {
+    .News {
+        &__blog-info {
+            padding: 46px 46px 60px;
+        }
+    }
+}
+
+@media (max-width:1439.98px) {
+    .News {
+        padding: 140px 0 200px;
+
+        &__wrap-blogs {
+            gap: 30px;
+        }
+
+        &__blog-info {
+            top: 100px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .News {
+        padding: 100px 0 160px;
+
+        &__wrap-blogs {
+            gap: 30px;
+        }
+
+        &__blog {
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        &__blog-info {
+            position: relative;
+            top: 120px;
+            width: 100%;
+            padding: 40px 30px 50px;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .News {
+        padding: 100px 0 160px;
+
+        &__info {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__info-wrap-titles {
+            align-self: flex-start;
+        }
+
+        &__wrap-blogs {
+            gap: 15px;
+        }
+
+        &__blog {
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        &__blog-info {
+            position: relative;
+            top: 114px;
+            width: 100%;
+            padding: 30px 15px 40px;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .News {
+        padding: 100px 0 140px;
+
+
+        &__wrap-blogs {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 100px;
+        }
+
+        &__blog {
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        &__blog-info {
+            position: relative;
+            top: 118px;
+            width: 100%;
+            padding: 40px 30px 50px;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .News {
+        padding: 60px 0;
+
+        &__wrap-blogs {
+            gap: 40px;
+        }
+
+        &__blog {
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        &__blog-info {
+            position: relative;
+            top: 20px;
+            padding: 30px 5% 40px;
+            border-radius: 20px;
+        }
+    }
+}

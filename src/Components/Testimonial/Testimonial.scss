@@ -1,0 +1,212 @@
+@import '../../scss/variables';
+
+.Testimonial {
+    padding: 164px 0;
+    background: $snow url(../../../public/img/Testimonial-bg.png) no-repeat center center / cover;
+    background-blend-mode: multiply;
+
+    &__wrap {
+        position: relative;
+        max-width: 1148px;
+        padding: 0 20px 108px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #E0E0E0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__title-label {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__review {
+        max-width: 780px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__review-img {
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+
+        img {
+            display: block;
+            border-radius: 50%;
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: 50% 20%;
+        }
+    }
+
+    &__review-rank {
+        font-size: 20px;
+        margin-bottom: 20px;
+        letter-spacing: -4px;
+    }
+
+    &__review-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__review-name {
+        font-weight: 600;
+    }
+
+    &__review-consumer {
+        color: $dimGray;
+        margin-bottom: 19px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    &__counters {
+        max-width: 1148px;
+        padding: 102px 20px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    &__counters-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 212px;
+        width: 212px;
+        padding: 10px;
+        border: 5px solid $darkSeaGreen;
+        border-radius: 50%;
+        background-color: #F1F1F1;
+
+        &::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 6px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media (max-width:1639.98px) {
+    .Testimonial {
+        padding: 120px 0;
+
+        &__wrap {
+            padding: 0 20px 80px;
+
+            &::after {
+                width: 90%;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &__counters {
+            padding: 80px 20px 0;
+        }
+    }
+}
+
+@media (max-width:1439.98px) {
+    .Testimonial {
+        padding: 80px 0;
+
+        &__wrap {
+            padding: 0 20px 60px;
+
+            &::after {
+                width: 80%;
+            }
+        }
+
+        &__counters {
+            padding: 60px 20px 0;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .Testimonial {
+        padding: 60px 0;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .Testimonial {
+        &__counters {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .Testimonial {
+        &__wrap {
+            padding: 0 20px 40px;
+
+            &::after {
+                width: 100%;
+                left: 0;
+                transform: translate(0, 0);
+            }
+        }
+
+        &__counters {
+            padding: 40px 20px 0;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .Testimonial {
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__wrap {
+            padding: 0 20px 30px;
+        }
+        &__counters {
+            padding: 30px 20px 0;
+            gap: 20px;
+        }
+    }
+}

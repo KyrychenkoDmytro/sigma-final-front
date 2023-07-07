@@ -1,0 +1,216 @@
+@import '../../scss/variables';
+
+.CartForm {
+    padding: 20px 0;
+    display: none;
+
+    &._active {
+        display: block;
+    }
+
+    &__wrap {
+
+        form {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px 4%;
+        }
+    }
+
+    &__full-name-wrap,
+    &__email-wrap,
+    &__address-wrap,
+    &__phone-wrap {
+        flex: 0 1 48%;
+        align-self: flex-end;
+    }
+
+    &__error {
+        margin-bottom: 20px;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: 500;
+        color: #e81212;
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    &__label {
+        margin-bottom: 26px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        color: $darkSlateGray;
+    }
+
+    &__input {
+        height: 80px;
+
+        input {
+            padding: 12px 22px;
+            height: inherit;
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid $darkSeaGreen;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 22px;
+            color: #ABABAB;
+        }
+    }
+
+    &__message-wrap {
+        flex: 0 1 100%;
+    }
+
+    &__message-textarea {
+        height: 250px;
+
+        textarea {
+            padding: 28px 22px;
+            height: inherit;
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid $darkSeaGreen;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 22px;
+            color: #ABABAB;
+        }
+    }
+
+    &__btn-confirm {
+        min-width: 220px;
+        padding: 23px 57px;
+        margin-top: 60px;
+        transition: background-color .3s ease;
+
+        &:focus {
+            background-color: $khaki;
+        }
+    }
+}
+
+@media (max-width:1439.98px) {
+    .CartForm {
+        &__input {
+            height: 74px;
+        }
+
+
+        &__message-textarea {
+            height: 220px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .CartForm {
+
+        &__wrap {
+
+            form {
+                width: 100%;
+            }
+        }
+
+        &__label {
+            margin-bottom: 16px;
+        }
+
+        &__input {
+            height: 70px;
+        }
+
+
+        &__message-textarea {
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .CartForm {
+
+        &__input {
+            height: 64px;
+        }
+
+        &__message-textarea {
+            height: 180px;
+
+            textarea {
+                padding: 20px;
+            }
+        }
+
+        &__btn-confirm {
+            min-width: auto;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .CartForm {
+        &__wrap {
+
+            form {
+                gap: 30px 2%;
+            }
+        }
+
+        &__label {
+            margin-bottom: 10px;
+        }
+
+        &__full-name-wrap,
+        &__email-wrap,
+        &__address-wrap,
+        &__phone-wrap {
+            flex: 0 1 49%;
+        }
+
+        &__input {
+            input {
+                border-radius: 10px;
+            }
+        }
+
+        &__message-textarea {
+            height: 160px;
+
+            textarea {
+                padding: 12px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .CartForm {
+        &__wrap {
+            form {
+                flex-direction: column;
+            }
+        }
+
+        &__full-name-wrap,
+        &__email-wrap,
+        &__address-wrap,
+        &__phone-wrap,
+        &__message-wrap {
+            flex: none;
+            width: 100%;
+            max-width: 420px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.Banner {
+    position: relative;
+    width: 100%;
+    background: url(../../../public/img/Banner-bg1.png) no-repeat center center / cover,
+        #E3F1E9 url(../../../public/img/Banner-bg2.png)no-repeat center center / cover;
+
+    &__wrap {
+        height: 898px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__title-label {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .Banner {
+        background: url(../../../public/img/Banner-bg1.png) no-repeat center center / cover,
+            #E3F1E9 url(../../../public/img/Banner-bg2.png)no-repeat 36% center / cover;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .Banner {
+        &__wrap {
+            height: 740px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .Banner {
+        background: url(../../../public/img/Banner-bg1.png) no-repeat center center / cover,
+            #E3F1E9 url(../../../public/img/Banner-bg2.png)no-repeat 30% center / cover;
+
+        &__wrap {
+            height: 680px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .Banner {
+        background: url(../../../public/img/Banner-bg1.png) no-repeat 45% center / cover,
+            #E3F1E9 url(../../../public/img/Banner-bg2.png)no-repeat 45% center / cover;
+    }
+}

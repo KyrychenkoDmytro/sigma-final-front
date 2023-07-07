@@ -1,0 +1,82 @@
+.OfferBanner {
+    padding: 154px 20px 190px;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__block {
+        flex: 0 1 680px;
+        height: 367px;
+        padding: 55px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__block:first-child {
+        background: url(../../../public/img/OfferBanner1.jpg) no-repeat center center / cover;
+
+        .OfferBanner__title-label,
+        .OfferBanner__title {
+            color: #fff;
+        }
+    }
+
+    &__block:last-child {
+        background: url(../../../public/img/OfferBanner2.jpg) no-repeat center center / cover;
+    }
+}
+
+@media (max-width:1439.98px) {
+    .OfferBanner {
+        padding: 120px 20px;
+
+        &__block {
+            padding: 20px;
+        }
+
+        &__block:first-child {
+            background: url(../../../public/img/OfferBanner1.jpg) no-repeat 30% center / cover;
+        }
+
+        &__block:last-child {
+            background: url(../../../public/img/OfferBanner2.jpg) no-repeat 20% center / cover;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .OfferBanner {
+        padding: 80px 20px;
+
+        &__wrap {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .OfferBanner {
+        &__block:first-child {
+            background: url(../../../public/img/OfferBanner1.jpg) no-repeat 24% center / cover;
+        }
+
+        &__block:last-child {
+            background: url(../../../public/img/OfferBanner2.jpg) no-repeat 20% center / cover;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .OfferBanner {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+    }
+}
